@@ -126,8 +126,7 @@ function obstacle() {
 
 }
 function scores() {
-    var x = Math.round(random(130,150));
-    if(frameCount % x === 0) {
+    if(frameCount % 200 === 0) {
         prince = createSprite(1000,150,20,20);
         prince.velocityX = -5;
         prince.scale = 0.2;
